@@ -246,24 +246,32 @@ const projects = (await getCollection('work'))
 		background: var(--gradient-subtle);
 		box-shadow: var(--shadow-sm);
 	}
-
+	@media (max-width: 60em) {
+				  .cardRight {
+    height: 250px;
+  width: 250px;
+ 
+  }
+	}
 	@media (min-width: 50em) {
 		.mention-card {
 			border-radius: 1.5rem;
 			height: 9.5rem;
 		}
 	}
-	@media (max-width: 920px) {
+	@media (max-width: 750px) {
 
 			  .cardRight {
-    display: none;
+   height: 70%;
+  width: 70%;
+ 
   }
 
   .cardRight video {
-    display: none;
+    display: initial;
   }
   .imageHero{
-		display:initial;
+		display:none;
 	}
 	}
 </style>
